@@ -1,13 +1,14 @@
 # Laravel Elixir Icon fonts
 
-This is a simple [Spritesmith](https://github.com/twolfson/gulp.spritesmith) wrapper for [Laravel Elixir](https://github.com/laravel/elixir).
+This is a simple [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont)
+ and [gulp-iconfont-css](https://github.com/backflip/gulp-iconfont-css) wrapper for [Laravel Elixir](https://github.com/laravel/elixir).
 
 ## Install
 
 Install this package over npm.
 
 ```sh
-npm install laravel-elixir-spritesmith --save-dev
+npm install laravel-elixir-fonts --save-dev
 ```
 
 Require it in your `gulpfile.js` and use it.
@@ -15,52 +16,26 @@ Require it in your `gulpfile.js` and use it.
 ```javascript
 var elixir = require('laravel-elixir');
 
-require('laravel-elixir-spritesmith');
+require('laravel-elixir-fonts');
 
 elixir(function(mix) {
 
-  mix.spritesmith();
+  mix.fonts([elixir.config.assetsPath + '/svg/**/*.svg'], elixir.config.publicPath + '/fonts/');
 
 });
 ```
 
 ## How To
 
-If you run `mix.spritesmith()` without parameters, it looks for all PNG-Files in `resources/assets/img/sprites` (folders included).
+If you run `mix.fonts()` without parameters, it looks for all SVG-Files in `resources/assets/svg` (folders included).
 
-The output of the `sprite.css` file is in `resources/assets/css`. The output of your `sprite.png` is in `public/assets/img`.
+The output of the `icons.css` file is in `resources/assets/css`.
+The output of your `fonts` is in `public/assets/fonts`.
 
 These are the default paths, they can be overwritten by `elixir.config.assetsPath` and `elixir.config.css.outputFolder` or by pass options. See the [config](https://github.com/laravel/elixir/blob/master/Config.js) file from elixir for more options.
 
 ## Options
 
-```javascript
-mix.spritesmith('src', {options});
-```
+> Wonders are coming...
 
-##### Change Source
 
-```javascript
-mix.spritesmith('resources/assets/images');
-```
-
-##### Change Output
-
-```javascript
-mix.spritesmith(null, {
-  imgOutput: 'public/images',
-  cssOutput: 'public/styles'
-});
-```
-
-By default, you can use your sprite images with the class `sprite-{itemname}`. Change them with `cssOpt`.
-
-```javascript
-mix.spritesmith(null, {
-  cssVarMap: function (sprite) {
-    sprite.name = 'MY-SPRITE-' + sprite.name;
-  }
-}
-```
-
-And you can use all other options from [Spritesmith](https://github.com/twolfson/gulp.spritesmith).
