@@ -25,7 +25,7 @@ elixir.extend('fonts', function(src, output) {
 				timestamp: runTimestamp // recommended to get consistent builds when watching files
 			}))
 			.pipe(gulp.dest(output))
-			.pipe(new Elixir.Notification('Fonts generated'));
+			.pipe(new elixir.Notification('Fonts generated'));
 	}).watch(src);
 
 });
