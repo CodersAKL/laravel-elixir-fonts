@@ -4,8 +4,7 @@ var gulp = require('gulp'),
 	iconFont = require('gulp-iconfont'),
 	iconFontCss = require('gulp-iconfont-css'),
 	runTimestamp = Math.round(Date.now()/1000),
-	fontName = 'icons',
-	_ = require('underscore');
+	fontName = 'icons';
 
 
 elixir.extend('fonts', function(src, output) {
@@ -25,7 +24,8 @@ elixir.extend('fonts', function(src, output) {
 				formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // default, 'woff2' and 'svg' are available
 				timestamp: runTimestamp // recommended to get consistent builds when watching files
 			}))
-			.pipe(gulp.dest(output));
+			.pipe(gulp.dest(output))
+			.pipe(new Elixir.Notification('Fonts generated'));
 	}).watch(src);
 
 });
