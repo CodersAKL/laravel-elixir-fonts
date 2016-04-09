@@ -1,4 +1,4 @@
-# Laravel Elixir Icon fonts
+# Laravel Elixir Icon fonts [![Version](https://img.shields.io/npm/v/laravel-elixir-fonts.svg?style=plastic)](https://www.npmjs.com/package/laravel-elixir-fonts) [![Dependences](https://img.shields.io/david/CodersAKL/laravel-elixir-fonts.svg?style=plastic)](https://www.npmjs.com/package/laravel-elixir-fonts) [![npm](https://img.shields.io/npm/l/laravel-elixir-fonts.svg?style=plastic)](https://www.npmjs.com/package/laravel-elixir-fonts) [![npm](https://img.shields.io/npm/dt/laravel-elixir-fonts.svg?style=plastic)](https://www.npmjs.com/package/laravel-elixir-fonts)
 
 This is a simple [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont)
  and [gulp-iconfont-css](https://github.com/backflip/gulp-iconfont-css) wrapper for [Laravel Elixir](https://github.com/laravel/elixir).
