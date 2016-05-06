@@ -1,35 +1,35 @@
 {
-	"name": "laravel-elixir-fonts",
-	"version": "0.0.2",
-	"description": "This is a simple gulp-iconfont wrapper for Laravel Elixir",
-	"main": "index.js",
-	"dependencies": {
-		"gulp": "^3.9.1",
-		"gulp-iconfont": "^6.0.0",
-		"gulp-iconfont-css": "^2.1.0"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodersAKL/laravel-elixir-fonts.git"
-	},
-	"keywords": [
-		"laravel",
-		"elixir",
-		"gulp",
-		"fonts",
-		"icon",
-		"icon",
-		"fonts",
-		"fonticon"
-	],
-	"author": "FDiskas",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/CodersAKL/laravel-elixir-fonts/issues"
-	},
-	"homepage": "https://github.com/CodersAKL/laravel-elixir-fonts#readme"
+  "name": "laravel-elixir-fonts",
+  "version": "0.1.0",
+  "description": "This is a simple gulp-iconfont wrapper for Laravel Elixir",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-iconfont": "^6.0.0",
+    "gulp-iconfont-css": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodersAKL/laravel-elixir-fonts.git"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "gulp",
+    "fonts",
+    "icon",
+    "icon",
+    "fonts",
+    "fonticon"
+  ],
+  "author": "FDiskas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodersAKL/laravel-elixir-fonts/issues"
+  },
+  "homepage": "https://github.com/CodersAKL/laravel-elixir-fonts#readme"
 }
