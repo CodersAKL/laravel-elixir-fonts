@@ -4,10 +4,10 @@
   "description": "This is a simple gulp-iconfont wrapper for Laravel Elixir",
   "main": "index.js",
   "dependencies": {
+    "extend-options": "0.0.1",
     "gulp": "^3.9.1",
     "gulp-iconfont": "6.0.0",
-    "gulp-iconfont-css": "2.1.0",
-    "xtend": "2.1.2"
+    "gulp-iconfont-css": "2.1.0"
   },
   "devDependencies": {},
   "scripts": {

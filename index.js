@@ -4,31 +4,34 @@ var gulp = require('gulp'),
     iconFont = require('gulp-iconfont'),
     iconFontCss = require('gulp-iconfont-css'),
     runTimestamp = Math.round(Date.now()/1000),
-    extend = require("xtend");
+    extendOptions = require('extend-options');
 
 
 elixir.extend('fonts', function(src, output, options) {
 
     options = options || {};
-    var fontName = '_font_icons',
-    elixirConfig = this.config,
-    config = {
-        font: {
-            normalize: true,
-            fontName: fontName, // required
-            prependUnicode: false, // recommended option
-            formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // default, 'woff2' and 'svg' are available
-            timestamp: runTimestamp // recommended to get consistent builds when watching files
-        },
-        css: {
-            fontName: fontName,
-            targetPath: '../../' + elixirConfig.assetsPath + '/' + elixirConfig.css.sass.folder + '/' + fontName + '.scss',
-            fontPath: '../fonts/'
-        }
-    };
+    options.font = options.font || {};
+    options.css = options.css || {};
+    var fontName = '_font_icons';
+    options.font.fontName = options.font.fontName || fontName;
+    var elixirConfig = this.config,
+        config = {
+            font: {
+                normalize: true,
+                fontName: options.font.fontName, // required
+                prependUnicode: false, // recommended option
+                formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'], // default, 'woff2' and 'svg' are available
+                timestamp: runTimestamp // recommended to get consistent builds when watching files
+            },
+            css: {
+                fontName: options.font.fontName,
+                targetPath: '../../' + elixirConfig.assetsPath + '/' + elixirConfig.css.sass.folder + '/' + options.font.fontName + '.scss',
+                fontPath: '../fonts/'
+            }
+        };
 
-    config = extend(config, options);
-    console.log(config);
+    extendOptions(config.font, options.font);
+    extendOptions(config.css, options.css);
 
     new Task('fonts', function() {
         return gulp.src(src)
