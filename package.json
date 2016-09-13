@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-fonts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "This is a simple gulp-iconfont wrapper for Laravel Elixir",
   "main": "index.js",
   "dependencies": {
