@@ -35,8 +35,8 @@ elixir.extend('fonts', function(src, output, options) {
 
     new Task('fonts', function() {
         return gulp.src(src)
-            .pipe(iconFontCss(config.css))
-            .pipe(iconFont(config.font))
+            .pipe(iconFontCss(options.css))
+            .pipe(iconFont(options.font))
             .pipe(gulp.dest(output));
     }).watch(src);
 
