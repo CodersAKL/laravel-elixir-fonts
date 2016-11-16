@@ -32,7 +32,7 @@ If you run `mix.fonts()` without parameters, it looks for all SVG-Files in `reso
 The output of the `icons.css` file is in `resources/assets/css`.
 The output of your `fonts` is in `public/assets/fonts`.
 
-These are the default paths, they can be overwritten by `elixir.config.assetsPath` and `elixir.config.css.outputFolder` or by pass options. See the [config](https://github.com/laravel/elixir/blob/master/Config.js) file from elixir for more options.
+These are the default paths, they can be overwritten by `elixir.config.assetsPath` and `elixir.config.css.outputFolder` or by pass options. See the [config](https://github.com/laravel/elixir/blob/master/src/Config.js) file from elixir for more options.
 
 ## Options
 
