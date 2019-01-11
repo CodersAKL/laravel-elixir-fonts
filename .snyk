@@ -3,12 +3,6 @@ version: v1.12.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
-  'npm:hoek:20180212':
-    - gulp-iconfont > gulp-ttf2woff2 > ttf2woff2 > node-gyp > request > hawk > hoek:
-        patched: '2018-06-19T01:12:18.311Z'
-    - gulp-iconfont > gulp-ttf2woff2 > ttf2woff2 > node-gyp > request > hawk > boom > hoek:
-        patched: '2018-06-19T01:12:18.311Z'
-    - gulp-iconfont > gulp-ttf2woff2 > ttf2woff2 > node-gyp > request > hawk > sntp > hoek:
-        patched: '2018-06-19T01:12:18.311Z'
-    - gulp-iconfont > gulp-ttf2woff2 > ttf2woff2 > node-gyp > request > hawk > cryptiles > boom > hoek:
-        patched: '2018-06-19T01:12:18.311Z'
+  'npm:lodash:20180130':
+    - gulp-iconfont-css > lodash:
+        patched: '2018-07-03T01:13:04.213Z'

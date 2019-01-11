@@ -7,7 +7,7 @@
     "extend-options": "0.0.1",
     "gulp-iconfont": "8.0.1",
     "gulp-iconfont-css": "2.1.0",
-    "snyk": "^1.83.0"
+    "snyk": "^1.88.0"
   },
   "devDependencies": {},
   "scripts": {
