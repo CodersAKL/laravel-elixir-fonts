@@ -7,13 +7,14 @@
     "extend-options": "0.0.1",
     "gulp-iconfont": "8.0.1",
     "gulp-iconfont-css": "2.1.0",
-    "snyk": "^1.88.0"
+    "snyk": "^1.190.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
