@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "extend-options": "0.0.1",
-    "gulp-iconfont": "8.0.1",
+    "gulp-iconfont": "9.0.0",
     "gulp-iconfont-css": "3.0.0",
     "snyk": "^1.88.0"
   },
